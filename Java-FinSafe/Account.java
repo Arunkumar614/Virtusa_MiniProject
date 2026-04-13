@@ -14,7 +14,18 @@ public class Account {
         balance+=amount;
         transactions.add(amount);
     }
+    public void withdraw(double amount) throws InsufficientFundsException{
+        if(amount<=0){
+            throw new IllegalArgumentException("Invalid amount");
+        }
+        else if (amount>balance){
+            throw new InsufficientFundsException("Not enough balance");
+        }
+        else{
+            balance-=amount;
+            transactions.add(-amount);
+        }
 
-
+    }
 
 }
