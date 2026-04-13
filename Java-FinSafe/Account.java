@@ -13,6 +13,9 @@ public class Account {
         }
         balance+=amount;
         transactions.add(amount);
+        if (transactions.size()>5){
+            transactions.remove(0);
+        }
     }
     public void withdraw(double amount) throws InsufficientFundsException{
         if(amount<=0){
@@ -24,8 +27,22 @@ public class Account {
         else{
             balance-=amount;
             transactions.add(-amount);
+            if (transactions.size()>5){
+                transactions.remove(0);
+            }
         }
 
+    }
+    public void printMiniStatement(){
+        System.out.println("Transaction History"); 
+        for(double trans : transactions){
+            if(trans>0){
+                System.out.println("Deposited: "+trans);
+            }else{
+                System.out.println("Withdrawn: "+(-trans));
+            }
+        } 
+        System.out.println("Current Balance: "+ balance);  
     }
 
 }
