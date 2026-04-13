@@ -12,6 +12,7 @@ public class Account {
             throw new IllegalArgumentException("Invalid deposit amount");
         }
         balance+=amount;
+        System.out.println(amount+" Successfully Deposited");
         transactions.add(amount);
         if (transactions.size()>5){
             transactions.remove(0);
@@ -30,10 +31,12 @@ public class Account {
             if (transactions.size()>5){
                 transactions.remove(0);
             }
+            System.out.println(amount+ "Withdrawal successfull");
+            System.out.println("Current balance: "+balance);
         }
 
     }
-    public void printMiniStatement(){
+    public void printMiniStatement(){1
         System.out.println("Transaction History"); 
         for(double trans : transactions){
             if(trans>0){

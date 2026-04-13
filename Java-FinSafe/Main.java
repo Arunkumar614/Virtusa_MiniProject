@@ -6,8 +6,8 @@ public class Main{
        while(true){
         System.out.println("\n1. Choose Deposit");
         System.out.println("2. Choose Withdraw");
-        System.out.println("3.Choose MiniStatement");
-        System.out.println("4.Exit");
+        System.out.println("3. Choose MiniStatement");
+        System.out.println("4. Exit");
         int choosedValue=sc.nextInt();
         if (choosedValue==1){
             System.out.println("Enter amount: ");
