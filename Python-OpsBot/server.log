@@ -1,0 +1,6 @@
+INFO: User logged in
+ERROR: Database connection failed
+CRITICAL: System crash detected
+INFO: Backup completed
+FAILED LOGIN: Unauthorized access attempt
+ERROR: Timeout occurred
