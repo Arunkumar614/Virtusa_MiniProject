@@ -1,4 +1,4 @@
-** Virtusa Mini Projects**
+### Virtusa Mini Projects
 
 This repository contains three mini projects completed as part of Virtusa training.
 
