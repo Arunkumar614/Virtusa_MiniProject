@@ -52,7 +52,6 @@ So the system must:
 * Show last 5 transactions
 * Proper exception handling
 
-
 **Output:**
 Screenshots of the output are available in:
 Output_Screenshots folder
