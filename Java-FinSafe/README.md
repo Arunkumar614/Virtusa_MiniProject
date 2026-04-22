@@ -53,8 +53,7 @@ So the system must:
 * Proper exception handling
 
 
-**Output: **
-
+**Output:**
 Screenshots of the output are available in:
 Output_Screenshots folder
 
